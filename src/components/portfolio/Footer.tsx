@@ -4,23 +4,25 @@ export function Footer() {
   return (
     <footer className="border-t border-hairline pt-20 pb-10">
       <div className="mx-auto max-w-5xl px-6 md:px-10">
-        <div className="relative">
+        {/* Carve: the handles are painted in the page colour, so their glyphs
+            knock a hole straight through the large wordmark behind them. */}
+        <div className="relative isolate">
           <p
             aria-hidden="true"
-            className="select-none overflow-hidden font-display text-[15vw] leading-[0.8] font-semibold tracking-tighter whitespace-nowrap text-ink-2"
+            className="font-display overflow-hidden text-[15vw] leading-[0.8] font-semibold tracking-tighter whitespace-nowrap text-ink-2 select-none"
           >
             INISTHEGUYY
           </p>
-          {/* Carve: the handles strip knocks a band out of the large wordmark */}
-          <div className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2">
-            <ul className="pointer-events-auto flex flex-wrap items-center justify-center gap-6 bg-surface-1 py-2 md:gap-10">
+          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2">
+            <ul className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
               {socials.map((s) => (
                 <li key={s.label}>
                   <a
                     href={s.href}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="font-display text-xs tracking-[0.18em] text-ink-3 uppercase transition-colors hover:text-ink-1 md:text-sm"
+                    aria-label={`${s.label}: ${s.handle}`}
+                    className="font-display block text-sm font-bold tracking-[0.18em] text-surface-1 uppercase transition-colors hover:text-ink-1 md:text-base"
                   >
                     {s.handle}
                   </a>
