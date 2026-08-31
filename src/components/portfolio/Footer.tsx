@@ -4,23 +4,27 @@ export function Footer() {
   return (
     <footer className="border-t border-hairline pt-20 pb-10">
       <div className="mx-auto max-w-5xl px-6 md:px-10">
-        <div className="relative">
+        {/* Carve: the handle strip is a solid band of page colour laid over the
+            wordmark, and the handle glyphs are knocked out of that band with
+            destination-out — so the letters read as cut into the big text. */}
+        <div className="relative isolate">
           <p
             aria-hidden="true"
-            className="select-none overflow-hidden font-display text-[15vw] leading-[0.8] font-semibold tracking-tighter whitespace-nowrap text-ink-2"
+            className="font-display text-[15vw] leading-[0.8] font-semibold tracking-tighter overflow-hidden whitespace-nowrap text-ink-2 select-none"
           >
             INISTHEGUYY
           </p>
-          {/* Carve: the handles strip knocks a band out of the large wordmark */}
-          <div className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2">
-            <ul className="pointer-events-auto flex flex-wrap items-center justify-center gap-6 bg-surface-1 py-2 md:gap-10">
+          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 bg-surface-1">
+            <ul className="flex flex-wrap items-center justify-center gap-6 py-2 md:gap-10">
               {socials.map((s) => (
                 <li key={s.label}>
                   <a
                     href={s.href}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="font-display text-xs tracking-[0.18em] text-ink-3 uppercase transition-colors hover:text-ink-1 md:text-sm"
+                    aria-label={`${s.label}: ${s.handle}`}
+                    className="font-display block text-sm font-bold tracking-[0.18em] uppercase text-ink-1 transition-opacity hover:opacity-70 md:text-base"
+                    style={{ mixBlendMode: "destination-out" }}
                   >
                     {s.handle}
                   </a>
