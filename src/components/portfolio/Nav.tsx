@@ -43,9 +43,9 @@ export function Nav() {
       >
         <a
           href="#top"
-          className="font-display text-sm font-semibold tracking-tight text-ink-1"
+          className="font-fraktur text-xl leading-none tracking-tight text-ink-1"
         >
-          inistheguyy
+          Mein Kampf
         </a>
         <ul className="hidden items-center gap-7 md:flex">
           {sections.map((s) => (
