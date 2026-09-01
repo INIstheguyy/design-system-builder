@@ -33,7 +33,7 @@ function Index() {
       <Nav />
       <main>
         <Hero />
-        <About />
+        
         <Skills />
         <Work />
         <Experiments />
