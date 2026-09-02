@@ -123,12 +123,23 @@ export function SystemsMap() {
       </div>
 
       <div className="relative h-24 w-28 flex-shrink-0 text-ink-4 md:h-44 md:w-56">
-        {/* Laptop */}
+        {/* Laptop — screen clearly hinged to a keyboard base */}
         <svg data-device className="absolute inset-0 h-full w-full opacity-100 transition-opacity duration-500" viewBox="0 0 112 88" fill="none">
-          <rect x="22" y="6" width="68" height="46" rx="4" stroke="currentColor" strokeWidth="1.8" />
-          <circle cx="56" cy="14" r="1.4" fill="currentColor" />
-          <path d="M10 64 L102 64 L92 78 L20 78 Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
-          <line x1="22" y1="64" x2="90" y2="64" stroke="currentColor" strokeWidth="1.2" />
+          {/* Screen lid */}
+          <rect x="26" y="4" width="60" height="40" rx="3" stroke="currentColor" strokeWidth="1.8" />
+          <rect x="30" y="8" width="52" height="30" rx="1.5" stroke="currentColor" strokeWidth="1.2" />
+          <circle cx="56" cy="11" r="1.2" fill="currentColor" />
+          {/* Hinges */}
+          <line x1="34" y1="44" x2="34" y2="49" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+          <line x1="78" y1="44" x2="78" y2="49" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+          {/* Keyboard base */}
+          <path d="M12 54 L100 54 L92 76 L20 76 Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
+          {/* Keyboard grid */}
+          <line x1="20" y1="60" x2="92" y2="60" stroke="currentColor" strokeWidth="1.2" />
+          <line x1="18" y1="65" x2="94" y2="65" stroke="currentColor" strokeWidth="1.2" />
+          <line x1="22" y1="70" x2="90" y2="70" stroke="currentColor" strokeWidth="1.2" />
+          {/* Trackpad */}
+          <rect x="44" y="71" width="24" height="3" rx="1" fill="currentColor" />
         </svg>
         {/* Tablet — landscape slate with side bezels and home dot */}
         <svg data-device className="absolute inset-0 h-full w-full opacity-0 transition-opacity duration-500" viewBox="0 0 112 88" fill="none">
