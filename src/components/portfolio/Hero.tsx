@@ -75,7 +75,7 @@ export function Hero() {
         and how everything connects.
       </p>
 
-      <div data-about-block className="mt-24 max-w-2xl space-y-8 md:mt-32">
+      <div id="about" data-about-block className="mt-24 max-w-2xl space-y-8 md:mt-32">
         <h2 className="font-display text-xs font-medium tracking-[0.2em] text-ink-4 uppercase">
           About
         </h2>
