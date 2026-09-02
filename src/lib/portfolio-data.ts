@@ -47,9 +47,9 @@ export const skills: string[] = [
   "React Native",
   "Tailwind CSS",
   "Bootstrap",
+  "Framer Motion",
   "Firebase",
   "Airtable",
-  "Framer Motion",
   "Figma",
   "Git",
   "Postman",
@@ -58,7 +58,7 @@ export const skills: string[] = [
 
 export const sections = [
   { id: "about", label: "About" },
-  { id: "skills", label: "Skills" },
+  { id: "what-i-do", label: "What I Do" },
   { id: "work", label: "Work" },
   { id: "experiments", label: "Experiments" },
   { id: "contact", label: "Contact" },
@@ -70,4 +70,3 @@ export const socials = [
   { label: "Email", handle: "inistheguyy", href: "mailto:inistheguyy@gmail.com" },
 ];
 
-export const wireframeNodes = ["Client", "Middleware", "Server", "Third-party"];
