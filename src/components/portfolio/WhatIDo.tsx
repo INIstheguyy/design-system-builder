@@ -27,7 +27,7 @@ export function WhatIDo() {
       setActive((prev) => {
         let next = prev;
         while (next === prev) {
-          next = skills[Math.floor(Math.random() * skills.length)];
+          next = skills[Math.floor(Math.random() * skills.length)] ?? prev;
         }
         return next;
       });

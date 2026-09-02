@@ -79,10 +79,10 @@ export function SystemsMap() {
       deviceTimer = window.setInterval(() => {
         let next = current;
         while (next === current) {
-          next = svgs[Math.floor(Math.random() * svgs.length)];
+          next = svgs[Math.floor(Math.random() * svgs.length)] ?? current;
         }
         current?.classList.replace("opacity-100", "opacity-0");
-        next.classList.replace("opacity-0", "opacity-100");
+        next?.classList.replace("opacity-0", "opacity-100");
         current = next;
       }, 2600);
     }
