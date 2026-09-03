@@ -216,3 +216,25 @@
 }
 
 
+
+/* Systems map concept icons: CSS pseudo-3D tilt (no WebGL) */
+@keyframes icon-tilt {
+  0%, 100% { transform: rotateY(-14deg); }
+  50% { transform: rotateY(14deg); }
+}
+
+.icon-3d-wrap {
+  perspective: 150px;
+}
+
+.icon-3d {
+  display: inline-flex;
+  animation: icon-tilt 4.5s ease-in-out infinite;
+}
+
+.icon-3d-wrap:hover .icon-3d,
+.icon-3d-wrap[data-selected="true"] .icon-3d {
+  animation-play-state: paused;
+  transform: rotateY(24deg) scale(1.15);
+  transition: transform 0.3s ease;
+}

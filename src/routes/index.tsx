@@ -34,8 +34,13 @@ function Index() {
       <Nav />
       <main>
         <Hero />
-        <WhatIDo />
-        <SystemsMap />
+        <section id="what-i-do" className="mx-auto max-w-5xl px-6 py-28 md:px-10 md:py-40">
+          <h2 className="font-display text-xs font-medium tracking-[0.2em] text-ink-4 uppercase">
+            What I Do
+          </h2>
+          <SystemsMap />
+          <WhatIDo />
+        </section>
         <Work />
         <Experiments />
         <Contact />
