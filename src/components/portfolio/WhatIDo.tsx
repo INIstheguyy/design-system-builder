@@ -11,7 +11,7 @@ export function WhatIDo() {
   // Detect once whether this device has real pointer hover, so touch
   // devices get an automatic stand-in instead of an effect nobody can trigger.
   useEffect(() => {
-    const mql = window.matchMedia("(hover: hover)");
+    const mql = window.matchMedia("(hover: hover) and (min-width: 768px)");
     setHoverCapable(mql.matches);
     const onChange = (e: MediaQueryListEvent) => setHoverCapable(e.matches);
     mql.addEventListener("change", onChange);
