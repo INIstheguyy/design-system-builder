@@ -39,7 +39,7 @@ export function WhatIDo() {
 
   return (
     <ul
-      className="mt-8 flex flex-wrap gap-x-8 gap-y-3 md:mt-10"
+      className="flex flex-wrap gap-x-8 gap-y-3"
       onMouseLeave={() => hoverCapable && setActive(null)}
     >
       {skills.map((skill) => {
