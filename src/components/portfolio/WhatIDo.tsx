@@ -52,7 +52,7 @@ export function WhatIDo() {
             onFocus={() => setActive(skill)}
             onBlur={() => hoverCapable && setActive(null)}
             tabIndex={0}
-            className={`font-display text-2xl tracking-tight transition-all duration-300 outline-none md:text-4xl ${
+            className={`font-display text-lg tracking-tight transition-all duration-300 outline-none md:text-4xl ${
               isActive
                 ? "font-bold text-ink-1"
                 : dimmed

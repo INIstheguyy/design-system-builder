@@ -38,22 +38,23 @@ export const projects: Project[] = [
 ];
 
 export const skills: string[] = [
-  "HTML",
-  "CSS",
   "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
   "React Native",
   "Tailwind CSS",
-  "Bootstrap",
   "Framer Motion",
-  "Firebase",
-  "Airtable",
+  "GSAP",
+  "Node.js",
+  "Express.js",
+  "SQL",
+  "PostgreSQL",
+  'REST API',
+  "Supabase",
   "Figma",
-  "Git",
-  "Postman",
-  "WordPress",
+  "RAG",
+  "WebSockets & Webhooks",
 ];
 
 export const sections = [
