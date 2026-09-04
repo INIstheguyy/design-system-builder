@@ -60,7 +60,7 @@ export function Hero() {
     >
       <h1
         data-hero-item
-        className="font-display text-6xl leading-[0.95] font-semibold tracking-tight text-ink-1 md:text-7xl lg:text-[150px]"
+        className="font-display text-4xl leading-[0.95] font-semibold tracking-tight text-ink-1 md:text-7xl lg:text-[150px]"
       >
         INIOLUWA
         <br />
